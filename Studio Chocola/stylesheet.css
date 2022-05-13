@@ -1,0 +1,31 @@
+.container {
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 170px 800px 1fr 80px ;
+    grid-template-areas:
+      "header"
+      "main"
+      "sign-up"
+      "footer";
+  }
+  header {
+    grid-area: header;
+  }
+  main {
+    grid-area: main;
+  }
+  .sign-up {
+    grid-area: sign-up;
+  }  
+  footer {
+    grid-area: footer;
+  }
+  
+  
+@media screen and (min-width: 768px) {
+    .container {
+      grid-template-rows: 1fr 90vh 22vh 5vh;
+    } 
+  }
+  
